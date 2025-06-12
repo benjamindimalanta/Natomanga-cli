@@ -8,8 +8,8 @@ import (
 	"os"
 
 	"github.com/jroimartin/gocui"
-	nato "github.com/kaikaew13/manganato-api"
-	"github.com/kaikaew13/manganato-cli/views"
+	nato "github.com/benjamindimalanta/natomanga-api"
+	"github.com/kaikaew13/natomanga-cli/views"
 )
 
 func runCui() {
@@ -57,7 +57,7 @@ func runCui() {
 			log.Panicln(err)
 		}
 
-		// renders a list of latest updated mangas from manganato
+		// renders a list of latest updated mangas from natomanga
 		// when the program first started
 		if err = getInitialScreen(); err != nil {
 			log.Panicln(err)
@@ -99,7 +99,7 @@ func main() {
 	flag.Parse()
 
 	// gets the Searcher for fetching
-	// data manganato
+	// data natomanga
 	screen.searcher = nato.NewSearcher()
 
 	var err error = nil
