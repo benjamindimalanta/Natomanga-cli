@@ -1,5 +1,5 @@
 docker_build:
-	docker build -t manganato-cli .
+	docker build -t natomanga-cli .
 
 docker_run:
-	docker run -it -v ~/Desktop/manganato-cli:/root/Desktop/manganato-cli manganato-cli
+	docker run -it -v ~/Desktop/natomanga-cli:/root/Desktop/natomanga-cli natomanga-cli
