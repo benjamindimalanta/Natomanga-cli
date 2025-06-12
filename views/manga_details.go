@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/jroimartin/gocui"
-	nato "github.com/kaikaew13/manganato-api"
+	nato "github.com/benjamindimalanta/natomanga-api"
 )
 
 const mangaDetailsName string = "MangaDetails"
