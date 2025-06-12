@@ -13,12 +13,12 @@ import (
 	"time"
 
 	"github.com/jroimartin/gocui"
-	nato "github.com/kaikaew13/manganato-api"
-	"github.com/kaikaew13/manganato-cli/views"
+	nato "github.com/benjamindimalanta/natomanga-api"
+	"github.com/kaikaew13/natomanga-cli/views"
 )
 
 const (
-	manganatoURL          string = "https://readmanganato.com/"
+	natomangaURL          string = "https://natomanga.com/"
 	modalViewName         string = "Modal"
 	maxDownloadRetries    int    = 7
 	downloadTimeoutSecond int    = 2
@@ -79,8 +79,8 @@ func getViewNames(g *gocui.Gui) []string {
 	return viewNames
 }
 
-// uses manganato-cli's Searcher to fetch
-// latest updated mangas from manganato
+// uses natomanga-cli's Searcher to fetch
+// latest updated mangas from natomanga
 // then displays to SearchList view
 func getInitialScreen() error {
 	mgs, err := screen.searcher.SearchLatestUpdatedManga()
@@ -94,7 +94,7 @@ func getInitialScreen() error {
 	return nil
 }
 
-// uses manganato-cli's Searcher to fetch
+// uses natomanga-cli's Searcher to fetch
 // a specific manga's info then displays
 // to MangaDetails and ChapterList views
 func getMangaScreen(s string) error {
@@ -339,12 +339,12 @@ func downloadPagesNowait(pgs []nato.Page, outputdir string) error {
 	return nil
 }
 
-// specify download path to Desktop/manganato-cli
+// specify download path to Desktop/natomanga-cli
 // if the directory does not exist then create a new one
 // with that name
 func getDirPath(homedir, chapterName string) (dirpath string, err error) {
 	dirpath = filepath.Join(
-		homedir, "Desktop", "manganato-cli", screen.cl.MangaName,
+		homedir, "Desktop", "natomanga-cli", screen.cl.MangaName,
 		screen.cl.NameToIDMap[chapterName],
 	)
 	err = os.MkdirAll(dirpath, 0755)
@@ -355,7 +355,7 @@ func getDirPath(homedir, chapterName string) (dirpath string, err error) {
 	return dirpath, nil
 }
 
-// makes a request to manganato to download
+// makes a request to natomanga to download
 // the page and saves it to the specified filepath
 func downloadPage(fp, url string) error {
 	if len(url) > maxURLLength {
@@ -367,7 +367,7 @@ func downloadPage(fp, url string) error {
 		return err
 	}
 	// adds header so the request wont be blocked
-	req.Header.Add("referer", manganatoURL)
+	req.Header.Add("referer", natomangaURL)
 
 	client := &http.Client{}
 
