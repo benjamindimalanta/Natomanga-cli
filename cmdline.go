@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	nato "github.com/kaikaew13/manganato-api"
+	nato "github.com/kaikaew13/natomanga-api"
 )
 
 type Chapter struct {
