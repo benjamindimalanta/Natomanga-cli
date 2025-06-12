@@ -18,7 +18,7 @@ import (
 )
 
 const (
-	natomangaURL          string = "https://natomanga.com/"
+	natomangaURL          string = "https://www.natomanga.com/"
 	modalViewName         string = "Modal"
 	maxDownloadRetries    int    = 7
 	downloadTimeoutSecond int    = 2
