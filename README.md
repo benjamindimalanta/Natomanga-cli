@@ -18,7 +18,7 @@
 ## install
 
 ```
-git clone https://github.com/benjamindimalanta/Natomanga-cli.git
+git clone https://github.com/benjamindimalanta/natomanga-cli.git
 cd natomanga-cli
 go build
 ./natomanga-cli
@@ -27,7 +27,7 @@ go build
 ### for docker
 
 ```
-git clone https://github.com/benjamindimalanta/Natomanga-cli.git
+git clone https://github.com/benjamindimalanta/natomanga-cli.git
 cd natomanga-cli
 make docker_build
 make docker_run
