@@ -1,6 +1,6 @@
 FROM golang
 
-WORKDIR /go/src/manganato-cli
+WORKDIR /go/src/natomanga-cli
 COPY . .
 
 RUN go get
