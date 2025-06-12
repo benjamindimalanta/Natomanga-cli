@@ -1,4 +1,4 @@
-module github.com/benjamindimalanta/Natomanga-cli
+module github.com/benjamindimalanta/natomanga-cli
 
 go 1.16
 
