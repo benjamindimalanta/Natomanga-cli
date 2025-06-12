@@ -1,8 +1,8 @@
 package main
 
 import (
-	nato "github.com/kaikaew13/manganato-api"
-	"github.com/kaikaew13/manganato-cli/views"
+	nato "github.com/benjamindimalanta/natomanga-api"
+	"github.com/benjamindimalanta/natomanga-cli/views"
 )
 
 var screen Screen
@@ -16,6 +16,6 @@ type Screen struct {
 	md *views.MangaDetails
 	cl *views.ChapterList
 
-	// manganato-api's Searcher struct
+	// natomanga-api's Searcher struct
 	searcher nato.Searcher
 }
