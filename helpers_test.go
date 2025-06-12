@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/jroimartin/gocui"
-	nato "github.com/kaikaew13/manganato-api"
+	nato "github.com/benjamindimalanta/natomanga-api"
 	"github.com/kaikaew13/manganato-cli/views"
 )
 
