@@ -1,6 +1,6 @@
-# manganato-cli
+# natomanga-cli
 
-Unofficial Manganato's manga downloader CUI and [CLI](https://github.com/kaikaew13/manganato-cli/blob/main/CLI.md) written in Go.
+
 
 **note:** currently works on Mac and Linux, for Windows, please run via Docker and WSL (see [docker](#for-docker))
 
@@ -13,22 +13,22 @@ Unofficial Manganato's manga downloader CUI and [CLI](https://github.com/kaikaew
 ## dependencies
 
 - [gocui](https://github.com/jroimartin/gocui) for CUI
-- [manganato-api](https://github.com/kaikaew13/manganato-api) for web scraped API (use [gocolly](https://github.com/gocolly/colly) as a web scraper)
+- [natomanga-api](https://github.com/benjamindimalanta/natomanga-api) for web scraped API (use [gocolly](https://github.com/gocolly/colly) as a web scraper)
 
 ## install
 
 ```
-git clone https://github.com/kaikaew13/manganato-cli.git
-cd manganato-cli
+git clone https://github.com/benjamindimalanta/Natomanga-cli.git
+cd natomanga-cli
 go build
-./manganato-cli
+./natomanga-cli
 ```
 
 ### for docker
 
 ```
-git clone https://github.com/kaikaew13/manganato-cli.git
-cd manganato-cli
+git clone https://github.com/benjamindimalanta/Natomanga-cli.git
+cd natomanga-cli
 make docker_build
 make docker_run
 ```
@@ -43,7 +43,7 @@ make docker_run
    - display its list of chapters in chapterlist view
 5. select a chapter and download it to your own computer
 
-**note:** the downloaded chapters can be found in Desktop/manganato-cli directory
+**note:** the downloaded chapters can be found in Desktop/natomanga-cli directory
 
 ## usage
 
