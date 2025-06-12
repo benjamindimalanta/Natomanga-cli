@@ -2,7 +2,7 @@ package main
 
 import (
 	nato "github.com/benjamindimalanta/natomanga-api"
-	"github.com/benjamindimalanta/natomanga-cli/views"
+	
 )
 
 var screen Screen

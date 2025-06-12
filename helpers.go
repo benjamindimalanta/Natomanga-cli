@@ -14,7 +14,7 @@ import (
 
 	"github.com/jroimartin/gocui"
 	nato "github.com/benjamindimalanta/natomanga-api"
-	"github.com/kaikaew13/natomanga-cli/views"
+	
 )
 
 const (
